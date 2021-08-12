@@ -1,0 +1,59 @@
+<div id="box">
+  <div class="container" 
+  fxLayout="column"
+  fxLayout.lg="column"
+  fxLayout.gt-md="column"
+  fxLayout.md="column"
+  fxLayout.sm="column"
+  fxLayout.xs="column"
+  fxLayoutAlign.lg="start center"
+  fxLayoutAlign.gt-md="start center"
+  fxLayoutAlign.md="start center"
+  fxLayoutAlign.sm="start center"
+  fxLayoutAlign.xs="start center">    
+  <div fxFlex 
+    fxShow.xs="false"
+    fxFlex.gt-md="100%"
+    fxFlex.md="100%"
+    fxFlex.sm="100%"
+    fxFlex.xs="100%"
+    class="headerDiv">
+    <h1 id="header" class="right">IP Address Tracker</h1>
+  </div>
+  <div fxFlex 
+    fxShow.xs="true"
+    fxShow.sm="false"
+    fxShow.md="false"
+    fxShow.lg="false"
+    fxFlex.xs="100%"
+    class="mobileHeaderDiv">
+    <h3 id="mobile-header" class="right">IP Address Tracker</h3>
+  </div>
+  <div fxFlex 
+    fxFlex.gt-md="100%"
+    fxFlex.md="100%"
+    fxFlex.sm="100%"
+    fxFlex.xs="100%"
+    class="inputContainer">
+    <input type="text" (keyup.enter)="onclick()" placeholder="search for any ip address or domain" id="ip-input">
+    <svg class="color-one" (click)="onclick()" xmlns="http://www.w3.org/2000/svg" width="15" height="15"><path fill="black" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6"/></svg>
+  </div>
+  <div
+    fxLayout="row"
+    fxLayout.xs="column"
+    fxLayoutAlign.xs="end center"
+    class="float-container">
+      <p class="paragragh color-two" fxLayout="column">IP ADDRESS <span>{{ip}}</span></p>
+    <hr>
+      <p class="paragragh color-two" fxLayout="column">LOCATION <span>{{city}} {{country}}</span></p>
+    <hr>
+      <p class="paragragh color-two" fxLayout="column" id="timezone">TIMEZONE <span>{{timezone}}</span></p>
+    <hr>
+      <p class="paragragh color-two" fxLayout="column">ISP <span>{{isp}}</span></p>
+  </div>
+</div>
+</div>
+
+<div id="spinner" *ngIf="isClicked" [hidden]="errMess">
+  <mat-spinner></mat-spinner> <h4>Loading . . . Please Wait!</h4>
+</div>

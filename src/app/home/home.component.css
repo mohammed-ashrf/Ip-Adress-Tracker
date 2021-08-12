@@ -1,0 +1,61 @@
+#header {
+    color: white;
+    padding-right: 20px;
+    font-size: 150%;
+}
+#mobile-header {
+    color: white;
+}
+.container {
+    background-image: url("src\\assets\\images\\pattern-bg.png");
+    height: 190px;
+}
+#ip-input {
+    height: 30px;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+    width: 80%;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+}
+.inputContainer{
+    width: 45%;
+    min-width: 230px;
+    padding-right: 20px;
+}
+.inputContainer svg {
+    position: absolute;
+    padding: 19px;
+    cursor: pointer;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.float-container {
+    background-color: #fff;
+    border-radius: 12px;
+    z-index: 1000;
+    padding: 15px;
+    width: 80%;
+    position: relative;
+    top: 18%;
+    border-color: hsl(0, 0%, 59%);
+    border-width: 5px;
+}
+hr {
+    color: hsl(0, 0%, 59%);
+    background-color: hsl(0, 0%, 59%);
+    opacity: 30%;
+}
+#spinner {
+    position: absolute;
+    right: 40%;
+    margin-top: 80px;
+}
+span {
+    font-weight: 700;
+    color: hsl(0, 0%, 17%);
+}
+#timezone {
+    padding-right: 60px;
+}

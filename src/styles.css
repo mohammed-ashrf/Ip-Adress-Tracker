@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+/* styles */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    display: flex;
+}
+
+.color-one {
+    background-color: hsl(0, 0%, 17%);
+}
+
+.color-two {
+    color: hsl(0, 0%, 59%);
+}
