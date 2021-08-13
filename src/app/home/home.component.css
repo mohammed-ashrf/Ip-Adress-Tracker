@@ -52,10 +52,19 @@ hr {
     right: 40%;
     margin-top: 80px;
 }
+/* .paragraph {
+    text-align: center;
+    justify-content: center;
+    max-width: 60px;
+} */
 span {
     font-weight: 700;
     color: hsl(0, 0%, 17%);
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
 }
-#timezone {
+/* #timezone {
     padding-right: 60px;
-}
+} */

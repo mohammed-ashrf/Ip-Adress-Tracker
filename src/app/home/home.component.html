@@ -38,20 +38,20 @@
     fxFlex.xs="100%"
     class="inputContainer">
     <input type="text" (keyup.enter)="onclick()" placeholder="search for any ip address or domain" id="ip-input">
-    <svg class="color-one" (click)="onclick()" xmlns="http://www.w3.org/2000/svg" width="15" height="15"><path fill="black" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6"/></svg>
+    <svg class="color-one" (click)="onclick()" xmlns="http://www.w3.org/2000/svg" width="15" height="15"><path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6"/></svg>
   </div>
   <div
     fxLayout="row"
     fxLayout.xs="column"
     fxLayoutAlign.xs="end center"
     class="float-container">
-      <p class="paragragh color-two" fxLayout="column">IP ADDRESS <span>{{ip}}</span></p>
+      <p class="paragragh color-two" fxLayout="column" fxLayoutAlign.xs="center center" fxLayoutGap="15px">IP ADDRESS <span>{{ip}}</span></p>
     <hr>
-      <p class="paragragh color-two" fxLayout="column">LOCATION <span>{{city}} {{country}}</span></p>
+      <p class="paragragh color-two" fxLayout="column" fxLayoutAlign.xs="center center" fxLayoutGap="15px">LOCATION <span>{{city}} {{country}}</span></p>
     <hr>
-      <p class="paragragh color-two" fxLayout="column" id="timezone">TIMEZONE <span>{{timezone}}</span></p>
+      <p class="paragragh color-two" fxLayout="column" fxLayoutAlign.xs="center center" fxLayoutGap="15px">TIMEZONE <span>{{timezone}}</span></p>
     <hr>
-      <p class="paragragh color-two" fxLayout="column">ISP <span>{{isp}}</span></p>
+      <p class="paragragh color-two" fxLayout="column" fxLayoutAlign.xs="center center"fxLayoutGap="15px">ISP <span>{{isp}}</span></p>
   </div>
 </div>
 </div>
