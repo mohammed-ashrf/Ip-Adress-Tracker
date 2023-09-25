@@ -59,7 +59,7 @@ export class MapComponent implements OnInit {
   constructor(private homecomponent: HomeComponent) { }
 
   ngOnInit() {
-    // this.initMap();
+    this.initMap();
   }
 
 }
