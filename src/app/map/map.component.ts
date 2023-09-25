@@ -56,10 +56,9 @@ export class MapComponent implements OnInit {
     this.map.on('click', onMapClick);
 
   }
-  constructor(private homecomponent: HomeComponent) { }
+  constructor(private homecomponent: HomeComponent) {}
 
   ngOnInit() {
-    this.initMap();
   }
 
 }

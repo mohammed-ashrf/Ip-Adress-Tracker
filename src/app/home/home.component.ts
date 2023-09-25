@@ -37,6 +37,13 @@ export class HomeComponent implements OnInit {
     public datepipe: DatePipe,) { }
 
   ngOnInit() {
+    this.geolocationService.getIpAddress().subscribe(
+      (ip) => {
+        this.input = document.getElementById('ip-input');
+        this.input.value = ip;
+        this.onclick();
+      }
+    )
   }
 
   onclick(){
