@@ -40,7 +40,7 @@ export class HomeComponent implements OnInit {
     this.geolocationService.getIpAddress().subscribe(
       (ip) => {
         this.input = document.getElementById('ip-input');
-        this.input.value = ip;
+        this.input.value = ip.ip;
         this.onclick();
       }
     )
