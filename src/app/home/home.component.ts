@@ -86,7 +86,7 @@ export class HomeComponent implements OnInit {
       });
       tiles.addTo(this.map);
       var greenIcon = L.icon({
-        iconUrl: 'src/assets/images/icon-location.svg',
+        iconUrl: '/assets/images/icon-location.svg',
     
         iconSize:     [38, 95], // size of the icon
         iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
