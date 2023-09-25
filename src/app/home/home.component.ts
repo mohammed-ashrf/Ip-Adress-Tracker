@@ -85,14 +85,14 @@ export class HomeComponent implements OnInit {
         zoomOffset: -1,
       });
       tiles.addTo(this.map);
-      var greenIcon = L.icon({
-        iconUrl: '/assets/images/icon-location.svg',
+      // var greenIcon = L.icon({
+      //   iconUrl: '/assets/images/icon-location.svg',
     
-        iconSize:     [38, 95], // size of the icon
-        iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
-        popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
-      });
-      var marker = L.marker([this.latitude, this.longitude], {icon: greenIcon});
+      //   iconSize:     [38, 95], // size of the icon
+      //   iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+      //   popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+      // });
+      var marker = L.marker([this.latitude, this.longitude]);
       marker.addTo(this.map);
       var circle = L.circle([this.latitude, this.longitude], {
         color: 'red',
